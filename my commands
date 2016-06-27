@@ -1,0 +1,141 @@
+Commands to Use:
+
+
+
+
+pwd -> it will print working directory/folder.
+
+hostname -> it will show my computer's network name.
+
+mkdir FOLDER1-> make directory naming FOLDER1 in working directory.
+
+cd FOLDER2 -> change directory to FOLDER2.
+
+ls -> it shows the list directory/folder inside working directory/folder.
+
+rmdir -> remove directory (only if that directory is empty)
+
+mkdir -p -> to make dierctory within directory
+
+pushd -> push directory ( directly go to a specific directry without using cd many times)
+
+popd -> pop directory ( go back to previous directory)
+
+cp -> copy a file or directory   ( cp Desktop/file1 temp/   -> copy file1 in document to tremp)
+
+mv -> move a file or directory or rename it
+
+less -> page through a file
+
+cat -> print the whole file (only in display , actual content will remain same)
+
+| 
+$|$
+    The | takes the output from the command on the left, and "pipes" it to the command on the right
+
+$<$
+    The < will take and send the input from the file on the right to the program on the left.
+
+$>$
+
+    The > takes the output of the command on the left, then writes it
+
+    to the file on the right. 
+
+$>>$
+
+    The >> takes the output of the command on the left, then appends it
+
+    to the file on the right.
+
+*.txt -> means all files having .txt.
+
+echo -> to replace whole text in a new file.
+
+xargs -> execute arguments
+
+find -> find files
+              e.g.-   find . -name "*.txt" -print
+************************************
+grep -> find things inside files
+**************************************
+
+man -> read a manual page
+
+apropos -> find what man page is appropriate.
+Sometimes you forget the name of a command but you know what it does. This command looks through all the help files and finds potentially relevant help for you.
+
+env -> look at your environment
+
+echo -> print some arguments
+
+export -> export/set a new environment variable
+
+exit -> exit the shell
+
+sudo -> DANGER! become super user root DANGER!
+
+chmod -> change permission modifiers
+
+chown -> change ownership 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+git commands
+
+git init
+git status
+git add <file_name> 
+git add '*.txt'                          ->to add
+ all .txt files
+git add .                       -> to add all file
+git commit 
+git commit -m "message"                     -> -m to add message
+git log                    -> to check history
+
+to add remote repo
+git remote add <folder_name> <remote_name | repo url>
+
+
+pushing remotely from local file master to remote file origin
+git push <remote repo> <local repo>
+eg. git push -u origin master                      -> -u to remember git to learn parameters
+
+pulling remotly from remote to local
+git pull origin master
+
+To get difference after commited
+git diff 
+git diff HEAD                                         -> to see diff in last commit
+
+to get diff after staging
+git diff --staged
+
+
+Resetting the Stage ( UNSTAGING)
+git reset <file name>
+
+
+TO undo from last commit
+git checkout --<target>
+eg. git checkout --octocat.txt
+
+TO make branch
+git branch <branch name>
+
+
+to switch branch (to reach to new branch)
+git checkout <branch name>
+
+
+to remove all things,  which will not only remove the actual files from disk, but will also stage the removal of the files for us.
+git rm '*.txt'
+
+
+to merge from a branch to master branch
+git merge <branch name>
+
+to delete branc
+git branch -d <branch name>

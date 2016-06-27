@@ -1,0 +1,25 @@
+FOR C PROGRAM
+
+gedit <program name>.c
+
+type program
+
+to compile
+gcc -o <temp program name/ nick name> <program name>.c
+
+to execute
+./<nick name>
+
+
+FOR C++ PROGRAM
+sudo apt-get install g++
+
+then 
+gedit <program name>.c++
+
+to compile
+g++ .o <nick name> <program name>.c++
+
+to execute
+./<nick name>
+

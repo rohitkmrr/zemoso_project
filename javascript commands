@@ -1,0 +1,3 @@
+confirm()              to confirm
+prompt()                  to ask input
+console.log()         to show i/p
